@@ -1,0 +1,121 @@
+/* Base styling for body and fonts */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background-color: #f6f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation styling */
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #024a9b;
+}
+
+/* Headings */
+h2 {
+  color: #24292e;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Styling the form container */
+form {
+  max-width: 400px;
+  margin: 40px auto; /* center horizontally with vertical space */
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+/* Form input groups */
+form div {
+  margin-bottom: 16px;
+}
+
+/* Input text */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 10px 12px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #0366d6;
+  outline: none;
+  box-shadow: 0 0 8px rgba(3, 102, 214, 0.3);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #444;
+}
+
+ul li a {
+  color: #0366d6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #024a9b;
+}
+
+/* Responsive improvements */
+@media (max-width: 480px) {
+  form, ul {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
